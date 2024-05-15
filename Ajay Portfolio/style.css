@@ -1,0 +1,113 @@
+
+    
+#Name {
+font-family: "Faster One", system-ui;
+font-weight: 400;
+font-style: normal;
+text-align: center;
+-webkit-text-fill-color: rgb(200, 0, 0);
+font-size: 300%;
+margin-bottom: 1%;
+cursor: pointer;
+}
+
+#navBar {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15vw;
+    font-size: 180%;
+    margin-bottom: 10%;
+}
+
+.navBarItem {
+    cursor: pointer;
+}
+    
+#galleryContainer {
+box-sizing: border-box;
+position: relative;
+height: 50%;
+width: 100%;
+}
+.bigImage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    margin-top: -24vh;
+    font-size: 20px;
+    color: white;
+    padding: 0.7vh;
+    
+}
+.next {
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    border-radius:0 3px 3px 0;
+}
+
+.prev:hover,
+.next:hover{
+    background-color:rgb(48, 48, 48)
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#Thumbnails {
+    width: 20%;
+    float: left;
+}
+
+#aboutMe {
+    display: none;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 130%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align:justify;
+}
+
+#resumeTitle {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align:center;
+    font-size: 180%;
+    text-decoration: underline rgb(200, 0, 0);
+}
+
+#resume {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#resumeBody {
+    font-size: 130%;
+    text-align: justify;
+}
+
+
+/*currently working on this feature .Slide {
+display:none;
+}*/

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ajay's Portfolio
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patua+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="Name" onclick="switchPage('home')">Ajay Horne</h1>
+        <nav id="navBar">
+            <a onclick="switchPage('about me')" class="navBarItem">About Me</a>
+            <a onclick="switchPage('Highlights')" class="navBarItem">Highlights</a>
+            <a onclick="switchPage('resume')" class="navBarItem">Resume</a>
+        </nav>
+        <div id="galleryContainer">
+            <div class="Slide">
+                <img class="bigImage"src="pictures/IMG_1131.jpg">
+            </div>
+            <div class="Slide">
+                <img class="bigImage"src="pictures/IMG_1137.jpg">
+            </div>
+            <div class="Slide">
+                <img class="bigImage"src="pictures/IMG_1140.jpg">
+            </div>
+            <div class="Slide">
+                <img class="bigImage" src="pictures/IMG_1156.jpg">
+            </div>
+            <div class="Slide">
+                <img class="bigImage" src="pictures/IMG_1161.jpg">
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            <div id="Thumbnails">
+                
+            </div>
+        </div>
+        <div id="aboutMe">
+            <p>My name is Ajay Horne and I am a 12 year old boy from Durham, NC. My dream is to be a professional football player. I learned to catch when I was 4 and from then on I've been training my life! I train almost everyday, catching and throwing, running routes, and working on my fitness. 
+            </p>
+            <p>Unfortunately, my school doesn't have a football team in the middle or highschool. So I've played i9 flag football leauges just so I can have some game experience. My dad coaches and I play. As of before the 2024 season I've won 2 championships. We're going for another one this year! I also may want to go to North Carolina School of Science and Math for my junior and senior years of high school because they have a football team there.</p>
+            <p>
+                In my games I normally play center, quarterback or wide reciever. I can throw and move in the pocket well, and my snap is pretty good, but my strong suit is being lined up as a wide reciever. I'm built like one, lean but fast. It is my normal position and I've learned a lot from my experience. My dad is my best coach on and off the football field. When we are not at practice, we practice one on one. He's taught me so much strategy and route running skills to use to make my routes crisp and clean.
+            </p>
+        </div>
+        <div id="Highlights">
+            highlights
+        </div>
+        <div id="resume">
+            <h2 id="resumeTitle">Resume</h2>
+            <ul id="resumeBody">
+                <li>Two Leauges with I9 Football - 2021/2023 - Center, WR, QB</li>
+                <br>
+                <li> 
+                    Training Since age 7 - Dad as coach                                
+                </li>
+                    <br>
+                <li>
+                    Football Camps and Football at Camp
+                </li>
+                    <br>
+                <li>
+                    Football Club - School
+                </li>
+                    <br>
+                <li>
+                    Competitive Swimming - Full Body Fitness
+                </li>
+
+            </ul>
+        </div>
+        <script src="slidecontrol.js"></script>
+    </body>
+</html>
