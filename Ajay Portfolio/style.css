@@ -42,8 +42,8 @@ width: 100%;
 .next {
     cursor: pointer;
     position: absolute;
-    margin-top: -24vh;
-    font-size: 20px;
+    margin-top: -39vh;
+    font-size: 35px;
     color: white;
     padding: 0.7vh;
     
@@ -64,12 +64,13 @@ width: 100%;
 
 img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: auto;
 }
 
 #Thumbnails {
-    width: 20%;
-    float: left;
+    
+    display: flex;
+    flex-direction: row;
 }
 
 #aboutMe {
