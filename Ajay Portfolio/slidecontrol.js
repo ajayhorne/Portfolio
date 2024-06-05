@@ -1,11 +1,11 @@
 var slideindex=0;
 showSlides(slideindex);
 
-populateThumbnails();
+switchPage("home");
 
 function showSlides(index) {
 var i;
-var slides = document.getElementsByClassName("Slide");
+var slides = document.getElementsByClassName("bigImage");
 
 if (index > slides.length-1) {slideindex = 0}
 if (index < 0) {slideindex = slides.length-1}
@@ -24,19 +24,8 @@ function setCurrentSlide(i) {
 function changeSlide(i) {
     showSlides(slideindex +=i)
 }
-function populateThumbnails() {
-    var picturenames = ["IMG_1131.jpg", "IMG_1137.jpg", "IMG_1140.jpg", "IMG_1147.jpg", "IMG_1156.jpg", "IMG_1161.jpg"]
-    for (i=0; i<picturenames.length; i++) {
-        var div=document.createElement("div");
-        var img=document.createElement("img");
-        div.className ="column";
-        img.className = "thumbnail";
-        img.src = "pictures/"+ picturenames[i];
-        img.onclick = setCurrentSlide(i)
-        document.getElementById("Thumbnails").appendChild(div);
-        div.appendChild(img);
-    }
-}
+
+
 
 //pageNames: home, about me, highlights, resume
 function switchPage(pageName) {

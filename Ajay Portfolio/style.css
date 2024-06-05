@@ -9,6 +9,15 @@ text-align: center;
 font-size: 300%;
 margin-bottom: 1%;
 cursor: pointer;
+background-color: rgb(255, 64, 64);
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    
 }
 
 #navBar {
@@ -20,40 +29,63 @@ cursor: pointer;
     justify-content: center;
     gap: 15vw;
     font-size: 180%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    margin-top: 0;
+    margin-left:0;
 }
 
 .navBarItem {
     cursor: pointer;
 }
     
+#topBand {
+    background-color: rgb(255, 64, 64);
+    margin-bottom: 8%
+
+}
+
+#leftBar,
+#rightBar {
+    background-color: rgb(255, 64, 64);
+    position:absolute;
+    width: 10%;
+    height: 150%;
+}
+
+#rightBar {
+    right: 0%;
+}
+
 #galleryContainer {
 box-sizing: border-box;
 position: relative;
-height: 50%;
-width: 100%;
+width: 60%;
+margin-left: auto;
+margin-right: auto;
 }
 .bigImage {
     margin-left: auto;
     margin-right: auto;
+    width: 70%
 }
 
 .prev,
 .next {
     cursor: pointer;
     position: absolute;
-    margin-top: -39vh;
+   top: 35%;
     font-size: 35px;
     color: white;
     padding: 0.7vh;
     
 }
 .next {
-    right:0;
+    right:15%;
     border-radius: 3px 0 0 3px;
 }
 
 .prev {
+    left:15%;
     border-radius:0 3px 3px 0;
 }
 
@@ -63,15 +95,23 @@ width: 100%;
 }
 
 img {
-    max-width: 100%;
-    max-height: auto;
+ 
 }
 
 #Thumbnails {
     
     display: flex;
     flex-direction: row;
+    cursor:pointer;
+
+
 }
+
+.thumbnail {
+    width: 16.6%;
+    height: 70%;
+}
+
 
 #aboutMe {
     display: none;
@@ -101,6 +141,10 @@ img {
     font-style: normal;
     margin-left: 5vw;
     margin-right: 5vw;
+}
+
+#galleryContainer {
+    background-color: white;
 }
 
 #resumeBody {
