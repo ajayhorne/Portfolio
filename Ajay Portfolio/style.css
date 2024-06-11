@@ -49,12 +49,14 @@ body {
     background-color: rgb(255, 64, 64);
     position:absolute;
     width: 10%;
-    height: 150%;
+    height: 220%;
 }
 
 #rightBar {
     right: 0%;
 }
+
+
 
 #galleryContainer {
 box-sizing: border-box;
@@ -131,11 +133,44 @@ img {
     margin-left: 5vw;
     margin-right: 5vw;
     text-align:center;
-    font-size: 180%;
+    font-size: 250%;
     text-decoration: underline rgb(200, 0, 0);
 }
 
 #resume {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#highlightsTitle {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align:center;
+    font-size: 250%;
+    text-decoration: underline rgb(200, 0, 0);
+}
+
+#highlightsBody {
+    font-size: 130%;
+    text-align: justify;
+}
+
+.highlightsHeader {
+    text-decoration: underline rgb(200, 0, 0);
+}
+
+.detail {
+    font-size: 100%;
+    margin-left: 10%;
+}
+
+#Highlights {
     font-family: "Patua One", serif;
     font-weight: 400;
     font-style: normal;
@@ -152,7 +187,25 @@ img {
     text-align: justify;
 }
 
+#update {
+    text-align: center;
+    padding-top: 10%;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 150%;
+}
 
+#bottomBar {
+    background-color:rgb(255, 64, 64);
+    width: 100%;
+    height: 150%;
+    margin-top: 10%;
+    padding-bottom: 20%;
+
+}
 /*currently working on this feature .Slide {
 display:none;
 }*/

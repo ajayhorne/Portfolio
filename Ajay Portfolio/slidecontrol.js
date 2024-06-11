@@ -30,6 +30,9 @@ function changeSlide(i) {
 //pageNames: home, about me, highlights, resume
 function switchPage(pageName) {
     console.log (pageName);
+    var update = document.getElementById("update")
+    var leftBar = document.getElementById("leftBar");
+    var rightBar = document.getElementById("rightBar");
     var homePage = document.getElementById("galleryContainer");
     var aboutMe = document.getElementById("aboutMe");
     var Highlights = document.getElementById("Highlights");
@@ -39,6 +42,9 @@ function switchPage(pageName) {
         aboutMe.style.display="none";
         Highlights.style.display= "none";
         resume.style.display= "none";
+        leftBar.style.display= "block";
+        rightBar.style.display= "block";
+        update.style.display= "none";
     }
 
     else if (pageName == "about me") {
@@ -46,6 +52,9 @@ function switchPage(pageName) {
         homePage.style.display= "none";
         Highlights.style.display= "none";
         resume.style.display= "none";
+        leftBar.style.display= "none";
+        rightBar.style.display= "none";
+        update.style.display= "none";
     }
 
     else if (pageName == "Highlights") {
@@ -53,6 +62,9 @@ function switchPage(pageName) {
         aboutMe.style.display="none";
         homePage.style.display= "none";
         resume.style.display= "none";
+        leftBar.style.display= "none";
+        rightBar.style.display= "none";
+        update.style.display= "block";
     }
 
     else if (pageName == "resume") {
@@ -60,5 +72,8 @@ function switchPage(pageName) {
         aboutMe.style.display="none";
         homePage.style.display= "none";
         Highlights.style.display= "none";
+        leftBar.style.display= "none";
+        rightBar.style.display= "none";
+        update.style.display= "block";
     }
 }
