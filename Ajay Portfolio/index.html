@@ -10,10 +10,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patua+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="redBackground">
 
-        <div id="leftBar"></div>
-        <div id="rightBar"></div>
+    
 
         <!---Name div for deleting margin-->
         <div id="topBand">
@@ -30,36 +29,38 @@
         
         <div id="galleryContainer">
             
-           
+           <div id="innerGallery">
             
-            <img  class="bigImage"src="pictures/IMG_1131.jpg">
+                <img  class="bigImage"src="pictures/IMG_1131.jpg">
+                
+                <img   class="bigImage"src="pictures/IMG_1137.jpg">
             
-            <img   class="bigImage"src="pictures/IMG_1137.jpg">
-           
-            <img   class="bigImage"src="pictures/IMG_1140.jpg">
-            
-            <img   class="bigImage"src="pictures/IMG_1147.jpg">
+                <img   class="bigImage"src="pictures/IMG_1140.jpg">
+                
+                <img   class="bigImage"src="pictures/IMG_1147.jpg">
 
-            <img   class="bigImage" src="pictures/IMG_1156.jpg">
-           
-            <img   class="bigImage" src="pictures/IMG_1161.jpg">
+                <img   class="bigImage" src="pictures/IMG_1156.jpg">
             
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-            <div  id="Thumbnails">
+                <img   class="bigImage" src="pictures/IMG_1161.jpg">
                 
-                <img class="thumbnail" src="pictures/IMG_1131.jpg" onclick="setCurrentSlide(0)">
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <div  id="Thumbnails">
+                    
+                    <img class="thumbnail" src="pictures/IMG_1131.jpg" onclick="setCurrentSlide(0)">
+                    
+                    <img class="thumbnail" src="pictures/IMG_1137.jpg" onclick="setCurrentSlide(1)">
                 
-                <img class="thumbnail" src="pictures/IMG_1137.jpg" onclick="setCurrentSlide(1)">
-              
-                <img  class="thumbnail" src="pictures/IMG_1140.jpg" onclick="setCurrentSlide(2)">
-               
-                <img  class="thumbnail" src="pictures/IMG_1147.jpg" onclick="setCurrentSlide(3)">
-               
-                 <img class="thumbnail" src="pictures/IMG_1156.jpg" onclick="setCurrentSlide(4)">
+                    <img  class="thumbnail" src="pictures/IMG_1140.jpg" onclick="setCurrentSlide(2)">
                 
-                <img  class="thumbnail" src="pictures/IMG_1161.jpg" onclick="setCurrentSlide(5)">
+                    <img  class="thumbnail" src="pictures/IMG_1147.jpg" onclick="setCurrentSlide(3)">
+                
+                    <img class="thumbnail" src="pictures/IMG_1156.jpg" onclick="setCurrentSlide(4)">
+                
+                    <img  class="thumbnail" src="pictures/IMG_1161.jpg" onclick="setCurrentSlide(5)">
+                </div>
             </div>
+            
         </div>
         <div id="aboutMe">
             <p>My name is Ajay Horne and I am a 12 year old boy from Durham, NC. My dream is to be a professional football player. I learned to catch when I was 5 and from then on I've been training my whole life! I train almost everyday, catching and throwing, running routes, and working on my fitness. 
