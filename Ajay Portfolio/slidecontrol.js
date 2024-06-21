@@ -22,15 +22,21 @@ function setCurrentSlide(i) {
 }
     
 function changeSlide(i) {
-    showSlides(slideindex +=i)
+    showSlides(slideindex +=i);
 }
 
-
+function padGallery(numberContainers) {
+    var marginSize = document.getElementById("photoContainer")
+    if (numberContainers == "2") {
+        marginSize.style.padding=""
+    }
+}
 
 //pageNames: home, about me, highlights, resume
 function switchPage(pageName) {
     console.log (pageName);
     var update = document.getElementById("update")
+    var photoGallery = document.getElementById("photoGallery");
     var homePage = document.getElementById("galleryContainer");
     var aboutMe = document.getElementById("aboutMe");
     var Highlights = document.getElementById("Highlights");
@@ -41,7 +47,7 @@ function switchPage(pageName) {
         Highlights.style.display= "none";
         resume.style.display= "none";
         update.style.display= "none";
-        
+        photoGallery.style.display="none";    
     }
 
     else if (pageName == "about me") {
@@ -50,7 +56,7 @@ function switchPage(pageName) {
         Highlights.style.display= "none";
         resume.style.display= "none";
         update.style.display= "none";
-        
+        photoGallery.style.display="none";
     }
 
     else if (pageName == "Highlights") {
@@ -59,7 +65,7 @@ function switchPage(pageName) {
         homePage.style.display= "none";
         resume.style.display= "none";
         update.style.display= "block";
-        
+        photoGallery.style.display="none";
     }
 
     else if (pageName == "resume") {
@@ -68,6 +74,15 @@ function switchPage(pageName) {
         homePage.style.display= "none";
         Highlights.style.display= "none";
         update.style.display= "block";
-        
+        photoGallery.style.display="none";
+    }
+
+    else if (pageName == "photoGallery") {
+        photoGallery.style.display= "block";
+        aboutMe.style.display="none";
+        homePage.style.display= "none";
+        Highlights.style.display= "none";
+        update.style.display= "block";
+        resume.style.display= "none";
     }
 }
