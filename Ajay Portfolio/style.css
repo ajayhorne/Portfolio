@@ -13,11 +13,10 @@ background-color: rgb(255, 64, 64);
 
 }
 
+
+
 body {
-    margin: 0;
-    width: 85vw;
-    margin-left:auto;
-    margin-right: auto;
+    
 }
 
 .redBackground {
@@ -70,19 +69,24 @@ body {
 
 #galleryContainer {
     width: 70%;
-background-color:white;
-padding-left: 7%;
-padding-right: 7%;
-padding-bottom: 10%;
-padding-top: 10%;
-margin-left:auto;
-margin-right:auto;
+    background-color:white;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #innerGallery {
     box-sizing: border-box;
     position: relative;
 
+}
+
+#photoSlide {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bigImage {
@@ -135,6 +139,19 @@ img {
 }
 
 
+.Title {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align:center;
+    font-size: 7vw;
+    cursor: pointer;
+    text-decoration: underline rgb(200, 0, 0);
+}
+
+
 #aboutMe {
     display: none;
     font-family: "Patua One", serif;
@@ -175,16 +192,7 @@ img {
     
 }
 
-#resumeTitle {
-    font-family: "Patua One", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    text-align:center;
-    font-size: 7vw;
-    text-decoration: underline rgb(200, 0, 0);
-}
+
 
 #resume {
     font-family: "Patua One", serif;
@@ -197,17 +205,6 @@ img {
     font-size: 3.5vw;
 }
 
-#highlightsTitle {
-    font-family: "Patua One", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    text-align:center;
-    font-size: 7vw;
-    text-decoration: underline rgb(200, 0, 0);
-    
-}
 
 #highlightsBody {
     font-size: 3.5vw;
@@ -262,6 +259,37 @@ img {
     padding-bottom: 20%;
 
 }
-/*currently working on this feature .Slide {
-display:none;
-}*/
+
+@media only screen and (min-width: 800px) {
+    #Name {
+        font-size: 6vw;
+    }
+    
+    #navBar {
+        font-size: 3vw;
+        gap: 8vw;
+        margin-bottom: 3%;
+    }
+
+    #topBand {
+        margin-bottom: 0%;
+    }
+
+    .Title {
+        font-size: 4vw;
+    }
+
+    #photoSlide {
+        padding-left: 10%;
+        padding-right: 10%;        
+    }
+
+    #galleryContainer {
+        padding-top: 4%;
+    }
+
+    #aboutMe {
+        padding-top: 2%;
+    }
+
+}
