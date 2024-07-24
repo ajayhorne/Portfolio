@@ -86,3 +86,8 @@ function switchPage(pageName) {
         resume.style.display= "none";
     }
 }
+
+function addPhotoContainer() {
+    var pictures = document.getElementsByClassName("galleryPic")
+
+}

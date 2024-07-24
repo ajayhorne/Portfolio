@@ -99,7 +99,7 @@ body {
 .next {
     cursor: pointer;
     position: absolute;
-   top: 33vw;
+   top: 27vw;
     font-size: 8vw;
     color: white;
     padding: 0.7vh;
@@ -168,14 +168,10 @@ img {
 }
 
 .photoContainer {
-    float: right;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5vw;
-    display: flex;
+    display: grid;
     margin-bottom: 5vw;
-
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 0%;
 }
 
 #photoGallery {
@@ -187,7 +183,6 @@ img {
 .galleryPic {
     width: 28%;
     border-radius: 10px 10px 10px 10px;
-    
 
     
 }
@@ -288,8 +283,57 @@ img {
         padding-top: 4%;
     }
 
-    #aboutMe {
+    #aboutMeOuter {
         padding-top: 2%;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
     }
+
+    #photoGallery {
+        padding-top: 2%;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #Highlights {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #resume {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #aboutMe {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .prev,
+    .next {
+
+   top: 27vw;
+    font-size: 5vw;
+    color: white;
+    padding: 0.7vh;
+    
+}
+
+.next {
+    right:22%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left:15%;
+    border-radius:0 3px 3px 0;
+}
+
 
 }
