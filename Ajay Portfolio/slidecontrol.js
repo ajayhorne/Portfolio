@@ -89,5 +89,5 @@ function switchPage(pageName) {
 
 function addPhotoContainer() {
     var pictures = document.getElementsByClassName("galleryPic")
-
+    
 }
