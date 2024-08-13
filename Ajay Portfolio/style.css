@@ -168,10 +168,13 @@ img {
 }
 
 .photoContainer {
-    display: grid;
+    float: right;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+    display: flex;
     margin-bottom: 5vw;
-    grid-template-columns: 33% 33% 33%;
-    column-gap: 0%;
 }
 
 #photoGallery {
@@ -183,7 +186,6 @@ img {
 .galleryPic {
     width: 28%;
     border-radius: 10px 10px 10px 10px;
-
     
 }
 
@@ -389,7 +391,7 @@ img {
 
     #aboutMeOuter {
         padding-top: 0%;
-        width: 80%;
+        width: 88.9%;
         margin-right: auto;
         margin-left: auto;
     }
@@ -405,6 +407,7 @@ img {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 2%;
     }
 
     #resume {
@@ -412,11 +415,12 @@ img {
         margin-left: auto;
         margin-right: auto;
         font-size: 1.8vw;
+        padding-top: 2%;
     }
 
     #aboutMe {
-        padding-top:0.5%;
-        width: 90%;
+        padding-top: 2%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         font-size: 2vw;
@@ -443,12 +447,16 @@ img {
     }
 
     #highlightsBody {
-        font-size: 2.6vw;
+        font-size: 2.2vw;
 
     }
 
     #update {
         font-size: 3vw;
+    }
+
+    .highlightsHeader {
+        font-size:2.5vw;
     }
 
 }
