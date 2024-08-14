@@ -257,12 +257,19 @@ img {
 
 }
 
+button {
+    position: absolute;
+    bottom: -9vw;
+    left: 44vw;
+    opacity:75%;
+}
+
 @media only screen and (max-width: 600px) {
     
     #galleryContainer {
 
         padding-bottom: 100%;
-
+        top: 1vh;
     }
     
 }

@@ -88,12 +88,13 @@ function switchPage(pageName) {
 }
 
 function addPhotoContainer() {
-    var pictures = document.getElementsByClassName("galleryPic")
+    var pictures = document.getElementsByClassName("galleryPic");
     
 }
 
 // 8/13 lesson clickable video code unfinished/not working-->
+
 function playVideo() {
-    var myVideo = document.getElementById("myVideo");
-    myVideo.play();
+    var videos = video 
+    
 }
